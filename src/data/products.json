@@ -1,0 +1,93 @@
+[
+  {
+    "id": "sintra-board",
+    "name": "Sintra Board (Menu/Signage)",
+    "description": "Lightweight PVC Foam board, waterproof and durable. Perfect for restaurant menus and indoor/outdoor signage.",
+    "images": ["/products/sintra-1.jpg", "/products/sintra-2.jpg"],
+    "minOrder": "1 piece",
+    "options": ["Waterproof", "Single or Double Sided", "Matte/Glossy Finish"],
+    "technicalDetails": [
+      "Material: Premium PVC Foam Board (Sintra)",
+      "Thickness: Available in 3mm and 5mm",
+      "Print Quality: High-resolution UV Direct Print or Vinyl Wrap",
+      "Durability: Weatherproof and fade-resistant",
+      "Usage: Ideal for menu boards, hanging signs, and wall decor"
+    ],
+    "priceTable": {
+      "headers": ["Size", "Single-Sided (PHP)", "Double-Sided (PHP)"],
+      "rows": [
+        ["A4 Size", "150.00", "250.00"],
+        ["A3 Size", "300.00", "500.00"],
+        ["2x3 ft", "800.00", "1,400.00"]
+      ]
+    }
+  },
+  {
+    "id": "t-shirts",
+    "name": "Custom T-Shirts",
+    "description": "High-quality cotton shirts with customized vinyl or sublimation printing for teams, events, or brands.",
+    "images": ["/products/tshirt-1.jpg", "/products/tshirt-2.jpg"],
+    "minOrder": "12 pieces",
+    "options": ["Round Neck", "V-Neck", "High-Quality Print"],
+    "technicalDetails": [
+      "Fabric: 100% Cotton or Cotton-Polyester Blend",
+      "Print Method: Digital Heat Transfer, Vinyl, or Sublimation",
+      "Sizes: XS to XXL (Standard Asian Sizing)",
+      "Care: Machine washable, print-safe cold wash recommended",
+      "Customization: Front, back, and sleeve printing available"
+    ],
+    "priceTable": {
+      "headers": ["Quantity", "Price per Shirt (PHP)"],
+      "rows": [
+        ["12 - 50 pcs", "250.00"],
+        ["51 - 100 pcs", "220.00"],
+        ["100+ pcs", "190.00"]
+      ]
+    }
+  },
+  {
+    "id": "caps",
+    "name": "Personalized Caps",
+    "description": "Trucker caps or Baseball caps with your logo. Perfect for promotional giveaways.",
+    "images": ["/products/cap-1.jpg", "/products/cap-2.jpg"],
+    "minOrder": "20 pieces",
+    "options": ["Adjustable Strap", "Breathable Mesh", "Embroidered or Printed"],
+    "technicalDetails": [
+      "Cap Types: Trucker (Mesh back) or Classic Baseball style",
+      "Material: Durable Polyester or Canvas front",
+      "Size: One size fits all (Adjustable strap)",
+      "Print Area: Front panel (Standard 10x6cm center)",
+      "Colors: Various solid and two-tone colors available"
+    ],
+    "priceTable": {
+      "headers": ["Type", "Price (PHP)"],
+      "rows": [
+        ["Trucker Cap", "180.00"],
+        ["Baseball Cap", "220.00"]
+      ]
+    }
+  },
+  {
+    "id": "keychains",
+    "name": "Custom Keychains",
+    "description": "Acrylic or rubber keychains. Great for souvenirs, birthdays, and corporate branding.",
+    "images": ["/products/keychain-1.jpg", "/products/keychain-2.jpg", "/products/keychain-2.jpg", "/products/keychain-2.jpg", "/products/keychain-2.jpg", "/products/keychain-3.jpg", "/products/keychain-4.jpg"],
+    "minOrder": "50 pieces",
+    "options": ["Acrylic", "Full Color Print", "Double Sided"],
+    "technicalDetails": [
+      "Material: High-grade Clear Acrylic (3mm thickness)",
+      "Shape: Standard Circle, Square, or Custom Die-cut",
+      "Print: Back-to-back full color digital print",
+      "Hardware: Heavy-duty metal ring and chain included",
+      "Lead Time: 5-7 working days for bulk orders"
+    ],
+    "priceTable": {
+      "headers": ["Quantity", "Price per Unit (PHP)"],
+      "rows": [
+        ["50 - 100 pcs", "35.00"],
+        ["101 - 500 pcs", "25.00"],
+        ["500+ pcs", "18.00"]
+      ]
+    }
+  }
+]
