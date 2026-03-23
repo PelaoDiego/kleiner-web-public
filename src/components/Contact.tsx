@@ -3,25 +3,25 @@ export default function Contact() {
     {
       title: "Our Location",
       detail: "Moalboal, Cebu, Philippines",
-      subDetail: "Kleiner Printhouse, near Town Center",
+      subDetail: "Kleiner Printhouse Services, near Town Center",
       icon: "📍",
     },
     {
       title: "WhatsApp / Mobile",
-      detail: "+63 917 575 7792",
+      detail: "+63 956 885 4781",
       subDetail: "Available Mon-Sat, 8am - 5pm",
       icon: "📱",
     },
     {
       title: "Languages Spoken",
-      detail: "English, Cebuano (Bisaya) & Tagalog",
+      detail: "English, Bisaya",
       subDetail: "We speak your language!",
       icon: "🗣️",
     },
   ];
 
   const whatsappLink =
-    "https://wa.me/639175757792?text=Hi%20Kleiner%20Printing!%20I%20saw%20your%20website%20and%20I'm%20interested%20in%20a%20quote.";
+    "https://wa.me/639568854781?text=Hi%20Kleiner%20Printing!%20I%20saw%20your%20website%20and%20I'm%20interested%20in%20a%20quote.";
 
   return (
     <section id="contact" className="py-24 bg-kleiner-light">
@@ -76,7 +76,6 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Right Side: Direct Actions */}
           {/* Right Side: Direct Actions */}
           <div className="bg-white p-8 md:p-12 rounded-[2rem] shadow-2xl border border-gray-50 flex flex-col h-fit my-auto">
             <div className="text-center">
