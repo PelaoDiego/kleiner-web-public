@@ -42,7 +42,7 @@
     "id": "menu-printing",
     "name": "Menu Printing & Lamination",
     "description": "Professional restaurant menus. Spill-proof and heavy-duty for daily resort use.",
-    "images": [],
+    "images": ["/products/menu-1.jpg","/products/menu-2.jpg","/products/menu-3.jpg","/products/menu-4.jpg","/products/menu-5.jpg"],
     "minOrder": "1 piece",
     "options": ["Thick Lamination", "Synthetic Paper", "Spiral Bound"],
     "priceTable": {
@@ -55,7 +55,7 @@
     "id": "logo-making",
     "name": "Logo Making & Design",
     "description": "Professional graphic design services to build your brand from scratch.",
-    "images": [],
+    "images": ["/products/logo-1.jpg","/products/logo-2.jpg","/products/logo-3.jpg","/products/logo-4.jpg","/products/logo-5.jpg"],
     "minOrder": "1 Design",
     "options": ["Vector Files", "Revision Rounds", "Brand Identity"],
     "priceTable": {
@@ -68,7 +68,7 @@
     "id": "flyers",
     "name": "Marketing Flyers",
     "description": "High-quality flyers to promote your tours, restaurant specials, or events.",
-    "images": [],
+    "images": ["/products/flyer-1.jpg","/products/flyer-2.jpg","/products/flyer-3.jpg","/products/flyer-4.jpg","/products/flyer-5.jpg"],
     "minOrder": "100 pieces",
     "options": ["Glossy Paper", "Full Color", "A4/A5 Sizes"],
     "priceTable": {
@@ -94,7 +94,7 @@
     "id": "label-stickers",
     "name": "Label Stickers",
     "description": "Custom stickers for product branding, jars, and packaging.",
-    "images": [],
+    "images": ["/products/sticker-1.jpg","/products/sticker-2.jpg","/products/sticker-3.jpg","/products/sticker-4.jpg","/products/sticker-5.jpg"],
     "minOrder": "A4 Sheet",
     "options": ["Vinyl Waterproof", "Paper Stickers", "Die-Cut"],
     "priceTable": {
@@ -107,7 +107,7 @@
     "id": "mugs",
     "name": "Custom Mugs",
     "description": "Personalized ceramic mugs. Perfect for souvenirs and corporate gifts.",
-    "images": [],
+    "images": ["/products/mug-1.jpg","/products/mug-2.jpg","/products/mug-3.jpg","/products/mug-4.jpg","/products/mug-5.jpg"],
     "minOrder": "1 piece",
     "options": ["White 11oz", "Magic Mugs", "Full Color"],
     "priceTable": {
@@ -120,7 +120,7 @@
     "id": "keychains",
     "name": "Acrylic Keychains",
     "description": "Customized keychains for hotels, resorts, and souvenirs.",
-    "images": [],
+    "images": ["/products/keychain-1.jpg","/products/keychain-2.jpg","/products/keychain-3.jpg","/products/keychain-4.jpg","/products/keychain-5.jpg"],
     "minOrder": "24 pieces",
     "options": ["Clear Acrylic", "Double Sided", "Custom Shape"],
     "priceTable": {
@@ -133,7 +133,7 @@
     "id": "ref-magnets",
     "name": "Ref Magnets",
     "description": "Souvenir magnets for tourists and events. High-quality prints.",
-    "images": [],
+    "images": ["/products/magnet-1.jpg","/products/magnet-2.jpg","/products/magnet-3.jpg","/products/magnet-4.jpg","/products/magnet-5.jpg"],
     "minOrder": "24 pieces",
     "options": ["Rubberized", "Acrylic", "Full Color"],
     "priceTable": {
@@ -146,7 +146,7 @@
     "id": "pvc-id-cards",
     "name": "PVC ID Cards",
     "description": "Durable plastic IDs for employees, students, or memberships.",
-    "images": [],
+    "images": ["/products/pvc-id-1.jpg","/products/pvc-id-2.jpg","/products/pvc-id-3.jpg","/products/pvc-id-4.jpg","/products/pvc-id-5.jpg"],
     "minOrder": "10 cards",
     "options": ["Credit Card Size", "Double Sided", "Waterproof"],
     "priceTable": {
@@ -159,7 +159,7 @@
     "id": "calling-cards",
     "name": "Calling & Thank You Cards",
     "description": "Professional business cards and personalized thank you notes for sellers.",
-    "images": [],
+    "images": ["/products/card-1.jpg","/products/card-2.jpg","/products/card-3.jpg","/products/card-4.jpg","/products/card-5.jpg"],
     "minOrder": "1 Box (100pcs)",
     "options": ["Matte Lamination", "Glossy", "Round Corners"],
     "priceTable": {
