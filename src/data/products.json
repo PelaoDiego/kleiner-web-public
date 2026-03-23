@@ -71,7 +71,7 @@
     "id": "keychains",
     "name": "Custom Keychains",
     "description": "Acrylic or rubber keychains. Great for souvenirs, birthdays, and corporate branding.",
-    "images": ["/products/keychain-1.jpg", "/products/keychain-2.jpg", "/products/keychain-2.jpg", "/products/keychain-2.jpg", "/products/keychain-2.jpg", "/products/keychain-3.jpg", "/products/keychain-4.jpg"],
+    "images": ["/products/keychain-1.jpg", "/products/keychain-2.jpg", "/products/keychain-3.jpg", "/products/keychain-4.jpg"],
     "minOrder": "50 pieces",
     "options": ["Acrylic", "Full Color Print", "Double Sided"],
     "technicalDetails": [
