@@ -260,7 +260,7 @@ function ProductCard({
         {/* BOTONES */}
         <div className="mt-8 pt-6 border-t border-gray-100 flex flex-col sm:flex-row gap-3 md:gap-4">
           <a
-            href={`https://wa.me/639175757792?text=Hi!%20I'm%20interested%20in%20your%20${product.name}.`}
+            href={`https://wa.me/639568854781?text=Hi!%20I'm%20interested%20in%20your%20${product.name}.`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 bg-kleiner-yellow text-kleiner-black font-black py-4 px-6 rounded-xl hover:bg-yellow-400 text-center uppercase tracking-wider text-xs md:text-sm shadow-md active:scale-95 transition-transform"
