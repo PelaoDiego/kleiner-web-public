@@ -5,6 +5,7 @@ import productsData from "@/data/products.json";
 
 export default function ProductList() {
   const [selectedProduct, setSelectedProduct] = useState<any>(null);
+  const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
 
   return (
     <div className="space-y-12 md:space-y-20">
@@ -13,10 +14,11 @@ export default function ProductList() {
           key={product.id}
           product={product}
           onShowDetails={() => setSelectedProduct(product)}
+          onEnlargeImage={(img) => setEnlargedImage(img)} // Pasamos la función para agrandar
         />
       ))}
 
-      {/* MODAL WINDOW */}
+      {/* MODAL 1: TECHNICAL SPECIFICATIONS (Ya lo teníamos) */}
       {selectedProduct && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-2 md:p-4 bg-black/60 backdrop-blur-sm">
           <div className="bg-white rounded-2xl md:rounded-3xl max-w-2xl w-full max-h-[85vh] overflow-y-auto shadow-2xl">
@@ -79,6 +81,44 @@ export default function ProductList() {
           </div>
         </div>
       )}
+
+      {/* MODAL 2: ENLARGED IMAGE (Nuevo Lightbox) */}
+      {enlargedImage && (
+        <div
+          className="fixed inset-0 z-[110] flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm cursor-zoom-out"
+          onClick={() => setEnlargedImage(null)} // Cierra al hacer clic fuera
+        >
+          <div className="relative max-w-7xl max-h-[90vh] w-auto h-auto rounded-xl overflow-hidden shadow-2xl">
+            <Image
+              src={enlargedImage}
+              alt="Enlarged product view"
+              width={1200} // Ancho máximo para calidad
+              height={1200} // Alto máximo para calidad
+              className="object-contain w-auto h-auto max-w-full max-h-[90vh]"
+              priority
+            />
+            {/* Botón de cerrar "X" */}
+            <button
+              onClick={() => setEnlargedImage(null)}
+              className="absolute top-4 right-4 bg-white/20 hover:bg-white/40 text-white p-2.5 rounded-full transition-colors"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -86,9 +126,11 @@ export default function ProductList() {
 function ProductCard({
   product,
   onShowDetails,
+  onEnlargeImage,
 }: {
   product: any;
   onShowDetails: () => void;
+  onEnlargeImage: (img: string) => void;
 }) {
   const [mainImage, setMainImage] = useState(
     product.images[0] || "/kleiner-logo.png",
@@ -96,19 +138,39 @@ function ProductCard({
 
   return (
     <div className="bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 flex flex-col lg:flex-row">
-      {/* SECCIÓN DE IMÁGENES: Ajustada para móvil */}
+      {/* SECCIÓN DE IMÁGENES */}
       <div className="lg:w-1/3 bg-gray-50 p-4 md:p-6 flex flex-col gap-4">
-        <div className="relative h-64 md:h-80 w-full rounded-2xl overflow-hidden shadow-md bg-white border border-gray-100">
+        {/* Imagen Principal: Ahora es clicable para agrandar */}
+        <button
+          onClick={() => onEnlargeImage(mainImage)}
+          className="relative h-64 md:h-80 w-full rounded-2xl overflow-hidden shadow-md bg-white border border-gray-100 cursor-zoom-in group"
+        >
           <Image
             src={mainImage}
             alt={product.name}
             fill
-            className="object-contain p-2 transition-all duration-300"
+            className="object-contain p-2 transition-transform duration-500 group-hover:scale-105"
             priority
           />
-        </div>
+          {/* Icono de lupa superpuesto al hacer hover */}
+          <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <svg
+              className="w-10 h-10 text-white bg-black/50 p-2 rounded-full"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+              />
+            </svg>
+          </div>
+        </button>
 
-        {/* Thumbnails con scroll horizontal en móvil */}
+        {/* Thumbnails (Scroll horizontal) */}
         {product.images.length > 1 && (
           <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide touch-pan-x">
             {product.images.map((img: string, idx: number) => (
@@ -154,7 +216,7 @@ function ProductCard({
             ))}
           </div>
 
-          {/* TABLA DE PRECIOS: Con scroll horizontal forzado para móvil */}
+          {/* TABLA DE PRECIOS */}
           <div className="overflow-x-auto rounded-xl border border-gray-200">
             <table className="w-full text-left min-w-[400px] md:min-w-full">
               <thead className="bg-gray-50 border-b border-gray-200">
@@ -195,7 +257,7 @@ function ProductCard({
           </div>
         </div>
 
-        {/* BOTONES: Apilados en móvil, lado a lado en tablet/desktop */}
+        {/* BOTONES */}
         <div className="mt-8 pt-6 border-t border-gray-100 flex flex-col sm:flex-row gap-3 md:gap-4">
           <a
             href={`https://wa.me/639175757792?text=Hi!%20I'm%20interested%20in%20your%20${product.name}.`}

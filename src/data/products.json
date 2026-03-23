@@ -1,93 +1,210 @@
 [
   {
-    "id": "sintra-board",
-    "name": "Sintra Board (Menu/Signage)",
-    "description": "Lightweight PVC Foam board, waterproof and durable. Perfect for restaurant menus and indoor/outdoor signage.",
-    "images": ["/products/sintra-1.jpg", "/products/sintra-2.jpg"],
+    "id": "tarpaulin",
+    "name": "Tarpaulin Printing",
+    "description": "High-quality outdoor banners for birthdays, events, and business signage. Durable and vibrant.",
+    "images": ["/products/tarpulin-1.jpg","/products/tarpulin-2.jpg","/products/tarpulin-3.jpg","/products/tarpulin-4.jpg","/products/tarpulin-5.jpg"],
     "minOrder": "1 piece",
-    "options": ["Waterproof", "Single or Double Sided", "Matte/Glossy Finish"],
-    "technicalDetails": [
-      "Material: Premium PVC Foam Board (Sintra)",
-      "Thickness: Available in 3mm and 5mm",
-      "Print Quality: High-resolution UV Direct Print or Vinyl Wrap",
-      "Durability: Weatherproof and fade-resistant",
-      "Usage: Ideal for menu boards, hanging signs, and wall decor"
-    ],
+    "options": ["Waterproof", "Eyelets Included", "High Res"],
     "priceTable": {
-      "headers": ["Size", "Single-Sided (PHP)", "Double-Sided (PHP)"],
-      "rows": [
-        ["A4 Size", "150.00", "250.00"],
-        ["A3 Size", "300.00", "500.00"],
-        ["2x3 ft", "800.00", "1,400.00"]
-      ]
-    }
+      "headers": ["Unit", "Price (PHP)"],
+      "rows": [["Per Square Foot", "20.00"]]
+    },
+    "technicalDetails": ["Material: 10oz-12oz Flex", "Ink: Solvent Outdoor", "Finishing: Folded edges with eyelets"]
   },
   {
-    "id": "t-shirts",
+    "id": "signage",
+    "name": "Business Signage",
+    "description": "Custom signs for shops and restaurants. Durable materials for Moalboal's coastal weather.",
+    "images": ["/products/signage-1.jpg","/products/signage-2.jpg","/products/signage-3.jpg","/products/signage-4.jpg","/products/signage-5.jpg"],
+    "minOrder": "1 piece",
+    "options": ["Sintra Board", "Acrylic", "Vinyl On Board"],
+    "priceTable": {
+      "headers": ["Material", "Price"],
+      "rows": [["Custom Signage", "Contact for Quote"]]
+    },
+    "technicalDetails": ["Mounting: Indoor/Outdoor", "UV Protection: Optional Lamination"]
+  },
+  {
+    "id": "tshirts",
     "name": "Custom T-Shirts",
-    "description": "High-quality cotton shirts with customized vinyl or sublimation printing for teams, events, or brands.",
-    "images": ["/products/tshirt-1.jpg", "/products/tshirt-2.jpg"],
+    "description": "Professional shirt printing for teams, diving centers, and staff uniforms.",
+    "images": ["/products/tshirt-1.jpg","/products/tshirt-2.jpg","/products/tshirt-3.jpg","/products/tshirt-4.jpg","/products/tshirt-5.jpg"],
     "minOrder": "12 pieces",
-    "options": ["Round Neck", "V-Neck", "High-Quality Print"],
-    "technicalDetails": [
-      "Fabric: 100% Cotton or Cotton-Polyester Blend",
-      "Print Method: Digital Heat Transfer, Vinyl, or Sublimation",
-      "Sizes: XS to XXL (Standard Asian Sizing)",
-      "Care: Machine washable, print-safe cold wash recommended",
-      "Customization: Front, back, and sleeve printing available"
-    ],
+    "options": ["DTF Print", "Sublimation", "Rubberized Vinyl"],
     "priceTable": {
-      "headers": ["Quantity", "Price per Shirt (PHP)"],
-      "rows": [
-        ["12 - 50 pcs", "250.00"],
-        ["51 - 100 pcs", "220.00"],
-        ["100+ pcs", "190.00"]
-      ]
-    }
+      "headers": ["Service", "Price"],
+      "rows": [["Print + Shirt", "Contact for Quote"]]
+    },
+    "technicalDetails": ["Methods: DTF or Sublimation", "Fabric: Cotton or Dri-Fit"]
   },
   {
-    "id": "caps",
-    "name": "Personalized Caps",
-    "description": "Trucker caps or Baseball caps with your logo. Perfect for promotional giveaways.",
-    "images": ["/products/cap-1.jpg", "/products/cap-2.jpg"],
-    "minOrder": "20 pieces",
-    "options": ["Adjustable Strap", "Breathable Mesh", "Embroidered or Printed"],
-    "technicalDetails": [
-      "Cap Types: Trucker (Mesh back) or Classic Baseball style",
-      "Material: Durable Polyester or Canvas front",
-      "Size: One size fits all (Adjustable strap)",
-      "Print Area: Front panel (Standard 10x6cm center)",
-      "Colors: Various solid and two-tone colors available"
-    ],
+    "id": "menu-printing",
+    "name": "Menu Printing & Lamination",
+    "description": "Professional restaurant menus. Spill-proof and heavy-duty for daily resort use.",
+    "images": [],
+    "minOrder": "1 piece",
+    "options": ["Thick Lamination", "Synthetic Paper", "Spiral Bound"],
     "priceTable": {
-      "headers": ["Type", "Price (PHP)"],
-      "rows": [
-        ["Trucker Cap", "180.00"],
-        ["Baseball Cap", "220.00"]
-      ]
-    }
+      "headers": ["Size", "Price"],
+      "rows": [["Menu Set", "Contact for Quote"]]
+    },
+    "technicalDetails": ["Plastic: 250 Microns", "Protection: 100% Waterproof"]
+  },
+  {
+    "id": "logo-making",
+    "name": "Logo Making & Design",
+    "description": "Professional graphic design services to build your brand from scratch.",
+    "images": [],
+    "minOrder": "1 Design",
+    "options": ["Vector Files", "Revision Rounds", "Brand Identity"],
+    "priceTable": {
+      "headers": ["Service", "Price"],
+      "rows": [["Logo Design", "Contact for Quote"]]
+    },
+    "technicalDetails": ["Formats: AI, SVG, PNG, JPG", "Process: Concept to Final"]
+  },
+  {
+    "id": "flyers",
+    "name": "Marketing Flyers",
+    "description": "High-quality flyers to promote your tours, restaurant specials, or events.",
+    "images": [],
+    "minOrder": "100 pieces",
+    "options": ["Glossy Paper", "Full Color", "A4/A5 Sizes"],
+    "priceTable": {
+      "headers": ["Quantity", "Price"],
+      "rows": [["100+ pieces", "Contact for Quote"]]
+    },
+    "technicalDetails": ["Paper: 80gsm - 130gsm", "Print: Digital Laser"]
+  },
+  {
+    "id": "digital-print",
+    "name": "Digital Print",
+    "description": "Photo-quality large format printing for posters and indoor displays.",
+    "images": [],
+    "minOrder": "1 piece",
+    "options": ["Glossy", "Matte", "Vivid Colors"],
+    "priceTable": {
+      "headers": ["Unit", "Price (PHP)"],
+      "rows": [["Per Square Foot", "20.00"]]
+    },
+    "technicalDetails": ["Resolution: 1440 DPI", "Media: Premium Photo Vinyl"]
+  },
+  {
+    "id": "label-stickers",
+    "name": "Label Stickers",
+    "description": "Custom stickers for product branding, jars, and packaging.",
+    "images": [],
+    "minOrder": "A4 Sheet",
+    "options": ["Vinyl Waterproof", "Paper Stickers", "Die-Cut"],
+    "priceTable": {
+      "headers": ["Type", "Price"],
+      "rows": [["Custom Labels", "Contact for Quote"]]
+    },
+    "technicalDetails": ["Finish: Matte/Glossy", "Shape: Custom Shapes"]
+  },
+  {
+    "id": "mugs",
+    "name": "Custom Mugs",
+    "description": "Personalized ceramic mugs. Perfect for souvenirs and corporate gifts.",
+    "images": [],
+    "minOrder": "1 piece",
+    "options": ["White 11oz", "Magic Mugs", "Full Color"],
+    "priceTable": {
+      "headers": ["Item", "Price"],
+      "rows": [["Custom Mug", "Contact for Quote"]]
+    },
+    "technicalDetails": ["Method: Sublimation", "Safety: Microwave Safe"]
   },
   {
     "id": "keychains",
-    "name": "Custom Keychains",
-    "description": "Acrylic or rubber keychains. Great for souvenirs, birthdays, and corporate branding.",
-    "images": ["/products/keychain-1.jpg", "/products/keychain-2.jpg", "/products/keychain-3.jpg", "/products/keychain-4.jpg"],
-    "minOrder": "50 pieces",
-    "options": ["Acrylic", "Full Color Print", "Double Sided"],
-    "technicalDetails": [
-      "Material: High-grade Clear Acrylic (3mm thickness)",
-      "Shape: Standard Circle, Square, or Custom Die-cut",
-      "Print: Back-to-back full color digital print",
-      "Hardware: Heavy-duty metal ring and chain included",
-      "Lead Time: 5-7 working days for bulk orders"
-    ],
+    "name": "Acrylic Keychains",
+    "description": "Customized keychains for hotels, resorts, and souvenirs.",
+    "images": [],
+    "minOrder": "24 pieces",
+    "options": ["Clear Acrylic", "Double Sided", "Custom Shape"],
     "priceTable": {
-      "headers": ["Quantity", "Price per Unit (PHP)"],
-      "rows": [
-        ["50 - 100 pcs", "35.00"],
-        ["101 - 500 pcs", "25.00"],
-        ["500+ pcs", "18.00"]
-      ]
-    }
+      "headers": ["Type", "Price"],
+      "rows": [["Acrylic Keychain", "Contact for Quote"]]
+    },
+    "technicalDetails": ["Material: 3mm Acrylic", "Hardware: Metal Ring"]
+  },
+  {
+    "id": "ref-magnets",
+    "name": "Ref Magnets",
+    "description": "Souvenir magnets for tourists and events. High-quality prints.",
+    "images": [],
+    "minOrder": "24 pieces",
+    "options": ["Rubberized", "Acrylic", "Full Color"],
+    "priceTable": {
+      "headers": ["Item", "Price"],
+      "rows": [["Custom Magnet", "Contact for Quote"]]
+    },
+    "technicalDetails": ["Print: Photo Quality", "Backing: Strong Magnet"]
+  },
+  {
+    "id": "pvc-id-cards",
+    "name": "PVC ID Cards",
+    "description": "Durable plastic IDs for employees, students, or memberships.",
+    "images": [],
+    "minOrder": "10 cards",
+    "options": ["Credit Card Size", "Double Sided", "Waterproof"],
+    "priceTable": {
+      "headers": ["Type", "Price"],
+      "rows": [["Standard PVC", "Contact for Quote"]]
+    },
+    "technicalDetails": ["Thickness: 0.76mm", "Material: Premium PVC"]
+  },
+  {
+    "id": "calling-cards",
+    "name": "Calling & Thank You Cards",
+    "description": "Professional business cards and personalized thank you notes for sellers.",
+    "images": [],
+    "minOrder": "1 Box (100pcs)",
+    "options": ["Matte Lamination", "Glossy", "Round Corners"],
+    "priceTable": {
+      "headers": ["Quantity", "Price"],
+      "rows": [["100 Cards", "Contact for Quote"]]
+    },
+    "technicalDetails": ["Paper: 250-300gsm Board", "Finish: Optional Lamination"]
+  },
+  {
+    "id": "lamination",
+    "name": "Lamination Service",
+    "description": "Protect your documents, IDs, and menus with thick plastic film.",
+    "images": [],
+    "minOrder": "1 piece",
+    "options": ["Short", "A4", "Long"],
+    "priceTable": {
+      "headers": ["Size", "Price (PHP)"],
+      "rows": [["Short/A4", "60.00-70.00"], ["Long", "80.00"]]
+    },
+    "technicalDetails": ["Film: 125-250 Microns", "Type: Hot Lamination"]
+  },
+  {
+    "id": "xerox",
+    "name": "Photocopy / Xerox",
+    "description": "Fast black & white and colored photocopying on-site.",
+    "images": [],
+    "minOrder": "1 page",
+    "options": ["B/W", "Colored", "Back-to-Back"],
+    "priceTable": {
+      "headers": ["Type", "Price (PHP)"],
+      "rows": [["B/W Start", "3.00"], ["Color Start", "5.00"]]
+    },
+    "technicalDetails": ["Paper: 70-80gsm Bond", "Service: Staff Assisted"]
+  },
+  {
+    "id": "scan-send",
+    "name": "Scan and Send",
+    "description": "Digitalize your documents and send them instantly via email or cloud.",
+    "images": [],
+    "minOrder": "1 page",
+    "options": ["PDF", "JPEG", "Email/FB"],
+    "priceTable": {
+      "headers": ["Service", "Price"],
+      "rows": [["Digital Scan", "Contact for Quote"]]
+    },
+    "technicalDetails": ["Quality: Up to 600 DPI", "Formats: PDF/JPG"]
   }
 ]
