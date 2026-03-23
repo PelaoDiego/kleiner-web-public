@@ -36,7 +36,7 @@ export default function Contact() {
               <h3 className="text-4xl font-extrabold text-kleiner-dark mb-6 tracking-tighter">
                 Ready to Order? <br />
                 <span className="text-kleiner-red font-black">
-                  Contact Kleiner Printing
+                  Contact Kleiner Printing Services
                 </span>
               </h3>
             </div>

@@ -54,11 +54,37 @@ export default function Home() {
       <Contact />
 
       {/* Footer Simple */}
-      <footer className="py-8 bg-kleiner-dark text-white text-center text-sm">
-        <p>
-          &copy; {new Date().getFullYear()} Kleiner Printing Services -
-          Moalboal, Cebu.
-        </p>
+      {/* Footer Profesional */}
+      <footer className="py-12 bg-kleiner-dark text-white">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="text-center md:text-left">
+            <h5 className="text-xl font-black text-kleiner-yellow mb-2 uppercase tracking-tighter">
+              Kleiner Printing Services
+            </h5>
+            <p className="text-gray-400 text-sm">
+              Moalboal, Cebu, Philippines • Established 2015
+            </p>
+          </div>
+
+          {/* Social Links */}
+          <div className="flex gap-6">
+            <a
+              href="https://www.facebook.com/KleinerPrinthouse" // Pon el link real de tu página de FB
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white/10 p-3 rounded-full hover:bg-[#1877F2] transition-all group"
+            >
+              <svg className="w-6 h-6 fill-white" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            {/* Puedes añadir Instagram aquí después si quieres */}
+          </div>
+
+          <p className="text-gray-500 text-xs">
+            &copy; {new Date().getFullYear()} All Rights Reserved.
+          </p>
+        </div>
       </footer>
     </main>
   );

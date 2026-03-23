@@ -13,16 +13,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kleiner Printing Services | High-Quality Prints in Moalboal, Cebu",
+  title: "Kleiner Printing Services | High-Quality Prints in Moalboal",
   description:
-    "Professional Tarpaulin printing, Sintra boards, personalized shirts, and branding materials. Nationwide shipping from Moalboal, Cebu, Philippines.",
-  keywords: [
-    "Printing Services Moalboal",
-    "Cebu Printing",
-    "Tarpaulin Printing Philippines",
-    "Sintra Board Menu",
-    "Kleiner Printing",
-  ],
+    "Your trusted partner for Tarpaulins, Sintra Boards, and professional branding in Cebu.",
+  openGraph: {
+    title: "Kleiner Printing Services",
+    description: "High-quality printing from Moalboal to the Philippines.",
+    url: "https://tu-sitio.vercel.app",
+    siteName: "Kleiner Printing Services",
+    images: [
+      {
+        url: "/kleiner-logo.png", // Usa tu logo como imagen de previsualización
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "en_PH",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
